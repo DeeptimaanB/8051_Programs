@@ -1,0 +1,56 @@
+A51 MACRO ASSEMBLER  TASK_3                                                               04/03/2021 02:39:31 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Task_3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Task_3.a51 SET(SMALL) DEBUG PRINT(.\Listings\Task_3.lst) OBJECT(.\Objec
+                      ts\Task_3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 C2A0              2     CLR P2.0
+0002 C2A1              3     CLR P2.1
+0004 D281              4     SETB P0.1
+0006 D280              5     SETB P0.0
+0008 A280              6     MOV C,P0.0
+000A 8281              7     ANL C,P0.1
+000C 92A0              8     MOV P2.0,C
+000E A280              9     MOV C,P0.0
+0010 400F             10     JC INPUT1
+0012 7400             11     MOV A,#00H
+0014 A281             12     BACK1:MOV C,P0.1
+0016 400D             13     JC INPUT2
+0018 7800             14     MOV R0,#00H
+001A 68               15     BACK2: XRL A,R0
+001B A2E0             16     MOV C,ACC.0
+001D 92A1             17     MOV P2.1,C
+001F 8008             18     SJMP END1
+0021 7401             19     INPUT1: MOV A,#01H
+0023 80EF             20     SJMP BACK1
+0025 7801             21     INPUT2: MOV R0,#01H
+0027 80F1             22     SJMP BACK2
+0029 00               23     END1:NOP
+                      24     END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  TASK_3                                                               04/03/2021 02:39:31 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+BACK1. . . . . . .  C ADDR   0014H   A   
+BACK2. . . . . . .  C ADDR   001AH   A   
+END1 . . . . . . .  C ADDR   0029H   A   
+INPUT1 . . . . . .  C ADDR   0021H   A   
+INPUT2 . . . . . .  C ADDR   0025H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

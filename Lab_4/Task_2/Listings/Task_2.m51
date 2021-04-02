@@ -1,0 +1,58 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/03/2021  02:23:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Task_2.obj TO .\Objects\Task_2 PRINT (.\Listings\Task_2.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Task_2.obj (TASK_2)
+
+
+LINK MAP OF MODULE:  .\Objects\Task_2 (TASK_2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     001AH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Task_2 (TASK_2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TASK_2
+  C:0019H         SYMBOL        END1
+  C:0015H         SYMBOL        EQUAL
+  C:0011H         SYMBOL        SMALL
+  C:0000H         LINE#         2
+  C:0003H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  C:0007H         LINE#         7
+  C:0008H         LINE#         8
+  C:0009H         LINE#         9
+  C:000BH         LINE#         10
+  C:000DH         LINE#         11
+  C:000FH         LINE#         12
+  C:0011H         LINE#         13
+  C:0013H         LINE#         14
+  C:0015H         LINE#         15
+  C:0017H         LINE#         16
+  C:0019H         LINE#         17
+  -------         ENDMOD        TASK_2
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001AH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=26
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

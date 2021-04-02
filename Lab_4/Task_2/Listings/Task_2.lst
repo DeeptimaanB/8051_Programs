@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  TASK_2                                                               04/03/2021 02:23:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Task_2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Task_2.a51 SET(SMALL) DEBUG PRINT(.\Listings\Task_2.lst) OBJECT(.\Objec
+                      ts\Task_2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 908000            2     MOV DPTR,#8000H
+0003 E0                3     MOVX A,@DPTR
+0004 F8                4     MOV R0,A
+0005 A3                5     INC DPTR
+0006 E0                6     MOVX A,@DPTR
+0007 C3                7     CLR C
+0008 98                8     SUBB A,R0
+0009 600A              9     JZ EQUAL
+000B 5004             10     JNC SMALL
+000D D27F             11     SETB 7FH
+000F 8008             12     SJMP END1
+0011 D278             13     SMALL: SETB 78H
+0013 8004             14     SJMP END1
+0015 C278             15     EQUAL: CLR 78H
+0017 C27F             16     CLR 7FH
+0019 00               17     END1:NOP
+                      18     END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  TASK_2                                                               04/03/2021 02:23:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+END1 . . . . . . .  C ADDR   0019H   A   
+EQUAL. . . . . . .  C ADDR   0015H   A   
+SMALL. . . . . . .  C ADDR   0011H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
