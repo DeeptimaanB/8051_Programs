@@ -1,0 +1,59 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/03/2021  22:00:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Task_3.obj TO .\Objects\Task_3 PRINT (.\Listings\Task_3.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Task_3.obj (TASK_3)
+
+
+LINK MAP OF MODULE:  .\Objects\Task_3 (TASK_3)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0017H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Task_3 (TASK_3)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TASK_3
+  C:0008H         SYMBOL        AGAIN
+  C:000AH         SYMBOL        BACK
+  D:0090H         SYMBOL        P1
+  D:00B0H         SYMBOL        P3
+  C:0000H         SYMBOL        REPEAT
+  B:0088H.7       SYMBOL        TF1
+  D:008DH         SYMBOL        TH1
+  D:008BH         SYMBOL        TL1
+  D:0089H         SYMBOL        TMOD
+  B:0088H.6       SYMBOL        TR1
+  C:0000H         LINE#         2
+  C:0003H         LINE#         3
+  C:0006H         LINE#         4
+  C:0008H         LINE#         5
+  C:000AH         LINE#         6
+  C:000CH         LINE#         7
+  C:000EH         LINE#         8
+  C:0011H         LINE#         9
+  C:0013H         LINE#         10
+  C:0015H         LINE#         11
+  -------         ENDMOD        TASK_3
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0017H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=23
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

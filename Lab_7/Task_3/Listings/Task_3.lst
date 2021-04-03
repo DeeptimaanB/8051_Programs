@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  TASK_3                                                               04/03/2021 22:00:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Task_3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Task_3.a51 SET(SMALL) DEBUG PRINT(.\Listings\Task_3.lst) OBJECT(.\Objec
+                      ts\Task_3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758960            2             REPEAT:MOV TMOD,#60H
+0003 758D00            3             MOV TH1,#0
+0006 D2B5              4             SETB P3.5
+0008 D28E              5             AGAIN:SETB TR1
+000A E58B              6             BACK:MOV A,TL1
+000C F590              7             MOV P1,A
+000E 308FF9            8             JNB TF1,BACK
+0011 C28E              9             CLR TR1
+0013 C28F             10             CLR TF1
+0015 80E9             11             SJMP REPEAT ;Deeptimaan Banerjee
+*** WARNING #A41 IN 11 (Task_3.a51, LINE 11): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  TASK_3                                                               04/03/2021 22:00:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0008H   A   
+BACK . . . . . . .  C ADDR   000AH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+REPEAT . . . . . .  C ADDR   0000H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)
