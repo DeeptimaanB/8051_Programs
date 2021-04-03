@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  C_TASK_2                                                             04/03/2021 18:51:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\C_Task_2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE C_Task_2.a51 SET(SMALL) DEBUG PRINT(.\Listings\C_Task_2.lst) OBJECT(.\O
+                      bjects\C_Task_2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 E555              2     MOV A,55H
+0002 A2E0              3     MOV C,ACC.0 
+0004 4004              4     JC ODD 
+0006 74FF              5     MOV A,#0FFH 
+0008 8002              6     SJMP END1
+000A 7400              7     ODD:MOV A,#00H
+000C 00                8     END1:NOP
+                       9     END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  C_TASK_2                                                             04/03/2021 18:51:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+END1 . . . . . . .  C ADDR   000CH   A   
+ODD. . . . . . . .  C ADDR   000AH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

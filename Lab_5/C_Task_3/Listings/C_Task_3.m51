@@ -1,0 +1,49 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/03/2021  20:35:33  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\C_Task_3.obj TO .\Objects\C_Task_3 PRINT (.\Listings\C_Task_3.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\C_Task_3.obj (C_TASK_3)
+
+
+LINK MAP OF MODULE:  .\Objects\C_Task_3 (C_TASK_3)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000EH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\C_Task_3 (C_TASK_3)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        C_TASK_3
+  C:0006H         SYMBOL        BACK
+  C:000CH         SYMBOL        OFF
+  D:0080H         SYMBOL        P0
+  D:0090H         SYMBOL        P1
+  C:0000H         LINE#         2
+  C:0003H         LINE#         3
+  C:0006H         LINE#         4
+  C:0008H         LINE#         5
+  C:000AH         LINE#         6
+  C:000CH         LINE#         7
+  -------         ENDMOD        C_TASK_3
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000EH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=14
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

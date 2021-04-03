@@ -1,0 +1,53 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/03/2021  19:47:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Task_2.obj TO .\Objects\Task_2 PRINT (.\Listings\Task_2.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Task_2.obj (TASK_2)
+
+
+LINK MAP OF MODULE:  .\Objects\Task_2 (TASK_2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0013H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Task_2 (TASK_2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TASK_2
+  C:0002H         SYMBOL        BACK
+  C:000EH         SYMBOL        DELAY
+  C:0010H         SYMBOL        HERE
+  D:0090H         SYMBOL        P1
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:000AH         LINE#         7
+  C:000CH         LINE#         8
+  C:000EH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  -------         ENDMOD        TASK_2
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0013H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=19
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

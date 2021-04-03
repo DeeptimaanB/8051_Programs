@@ -1,0 +1,68 @@
+A51 MACRO ASSEMBLER  C_TASK_1                                                             04/03/2021 18:47:35 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\C_Task_1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE C_Task_1.a51 SET(SMALL) DEBUG PRINT(.\Listings\C_Task_1.lst) OBJECT(.\O
+                      bjects\C_Task_1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 C290              2             CLR P1.0 
+0002 C291              3             CLR P1.1 
+0004 D282              4             SETB P0.2 
+0006 D281              5             SETB P0.1 
+0008 D280              6             SETB P0.0 
+000A A282              7             MOV C,P0.2 
+000C 4022              8             JC INPUT1
+000E 7400              9             MOV A,#00H 
+0010 A281             10             BACK1: MOV C,P0.1
+0012 4020             11             JC INPUT2
+0014 7800             12             MOV R0,#00H
+0016 68               13             BACK2:XRL A,R0 
+0017 A2E0             14             MOV C,ACC.0 
+0019 8280             15             ANL C,P0.0 
+001B 9290             16             MOV P1.0,C
+001D A282             17             MOV C, P0.2 
+001F 8281             18             ANL C,P0.1 
+0021 8290             19             ANL C,P1.0
+0023 A280             20             MOV C,P0.0
+0025 4011             21             JC INPUT3
+0027 7800             22             MOV R0,#00H
+0029 68               23             BACK3:XRL A,R0 
+002A A2E0             24             MOV C,ACC.0
+002C 9291             25             MOV P1.1,C
+002E 800C             26             SJMP END1
+0030 7401             27             INPUT1: MOV A,#01H
+0032 80DC             28             SJMP BACK1
+0034 7801             29             INPUT2: MOV R0,#01H 
+0036 80DE             30             SJMP BACK2
+0038 7801             31             INPUT3:MOV R0,#01H
+003A 80ED             32             SJMP BACK3
+003C 00               33             END1: NOP
+                      34     END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  C_TASK_1                                                             04/03/2021 18:47:35 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+BACK1. . . . . . .  C ADDR   0010H   A   
+BACK2. . . . . . .  C ADDR   0016H   A   
+BACK3. . . . . . .  C ADDR   0029H   A   
+END1 . . . . . . .  C ADDR   003CH   A   
+INPUT1 . . . . . .  C ADDR   0030H   A   
+INPUT2 . . . . . .  C ADDR   0034H   A   
+INPUT3 . . . . . .  C ADDR   0038H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

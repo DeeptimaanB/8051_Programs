@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  TASK_2                                                               04/03/2021 19:47:53 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Task_2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Task_2.a51 SET(SMALL) DEBUG PRINT(.\Listings\Task_2.lst) OBJECT(.\Objec
+                      ts\Task_2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 000H
+0000 C293              2     CLR P1.3
+0002 D293              3     BACK:SETB P1.3
+0004 110E              4     ACALL DELAY
+0006 110E              5     ACALL DELAY
+0008 C293              6     CLR P1.3
+000A 110E              7     ACALL DELAY
+000C 80F4              8     SJMP BACK
+000E 7AC8              9     DELAY:MOV R2, #200
+0010 DBFE             10     HERE:DJNZ R3,HERE
+0012 22               11     RET
+                      12     END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  TASK_2                                                               04/03/2021 19:47:53 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BACK . . . . . . .  C ADDR   0002H   A   
+DELAY. . . . . . .  C ADDR   000EH   A   
+HERE . . . . . . .  C ADDR   0010H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
