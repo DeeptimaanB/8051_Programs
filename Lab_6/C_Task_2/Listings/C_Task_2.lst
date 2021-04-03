@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  C_TASK_2                                                             04/03/2021 21:24:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\C_Task_2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE C_Task_2.a51 SET(SMALL) DEBUG PRINT(.\Listings\C_Task_2.lst) OBJECT(.\O
+                      bjects\C_Task_2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 000H
+0000 759000            2         MOV P1, #00H
+0003 7401              3         MOV A,#01H
+0005 F590              4         MOV P1,A
+0007 75F002            5             MOV B,#02H
+000A A4                6     BACK:MUL AB
+000B 04                7             INC A
+000C F590              8         MOV P1,A
+000E 111A              9         ACALL DELAY
+0010 75F002           10             MOV B,#02H
+0013 B4FFF4           11         CJNE A,#0FFH, BACK
+0016 7401             12             MOV A,#01H
+0018 80F0             13             SJMP BACK
+001A 7A04             14         DELAY:MOV R2,#04H
+001C 79FF             15         HERE3:MOV R1,#0FFH
+001E 78FF             16         HERE2:MOV R0,#0FFH
+0020 D8FE             17         HERE1:DJNZ R0,HERE1
+0022 D9FA             18         DJNZ R1,HERE2
+0024 DAF6             19         DJNZ R2, HERE3
+0026 22               20         RET
+                      21         END ;Deeptimaan Banerjee
+A51 MACRO ASSEMBLER  C_TASK_2                                                             04/03/2021 21:24:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+BACK . . . . . . .  C ADDR   000AH   A   
+DELAY. . . . . . .  C ADDR   001AH   A   
+HERE1. . . . . . .  C ADDR   0020H   A   
+HERE2. . . . . . .  C ADDR   001EH   A   
+HERE3. . . . . . .  C ADDR   001CH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
