@@ -1,3 +1,0 @@
-".\Objects\C_Task_3.obj" 
-TO ".\Objects\C_Task_3" 
-PRINT(".\Listings\C_Task_3.m51") RAMSIZE(256) 

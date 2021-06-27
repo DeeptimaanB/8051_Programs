@@ -1,8 +1,0 @@
-ORG 0000H
-	MOV P0,#0FFH
-	MOV P1,#00H
-	BACK:MOV C,P0.1 
-	JNC OFF 
-	SETB P1.7
-	OFF:SJMP BACK	
-	END ;Deeptimaan Banerjee
